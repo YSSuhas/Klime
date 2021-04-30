@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router} from "react-router-dom";
+import Map from './components/maps/Map';
+import "leaflet/dist/leaflet.css";
+import Footer from './components/footer/Footer';
 
 function App() {
+
+  const mapCenter = [ 12.974792, 77.586038 ];
+	const mapZoom = 10;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Map center={mapCenter} zoom={mapZoom}/>
+        <Footer className="Footer" />
+      </div>
+    </Router>
   );
 }
 
