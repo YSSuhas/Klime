@@ -9,8 +9,8 @@ function GetPosition({ map }) {
   const { REACT_APP_APIKey } = process.env;
 
   const [ clicked, setClicked ] = useState(false);
-  const [ weather, setWeather] = useState({});
-  const [position, setPosition] = useState(map.getCenter());
+  const [ weather, setWeather ] = useState({});
+  const [ position, setPosition ] = useState(map.getCenter());
 
   const onMove = useCallback(() => {
     setPosition(map.getCenter())
