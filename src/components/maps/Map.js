@@ -6,6 +6,8 @@ import axios from 'axios';
 
 function GetPosition({ map }) {
 
+  const { REACT_APP_APIKey } = process.env;
+
   const [ clicked, setClicked ] = useState(false);
   const [ weather, setWeather] = useState({});
   const [position, setPosition] = useState(map.getCenter());
@@ -33,7 +35,7 @@ function GetPosition({ map }) {
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.lat.toFixed(4)}&lon=${position.lng.toFixed(4)}&appid=${process.env.REACT_APP_APIKey}`);
+      const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.lat.toFixed(4)}&lon=${position.lng.toFixed(4)}&appid=${REACT_APP_APIKey}`);
       setWeather(data);
       console.log(weather);
     };
