@@ -1,3 +1,4 @@
-.Footer {
-    font-size: small;
+.footer {
+    display: flex;
+    justify-content: space-evenly;
 }
