@@ -6,5 +6,5 @@
 
 .App > .Footer {
   position: fixed;
-  bottom: 5px;
+  bottom: 0px;
 }
