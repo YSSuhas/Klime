@@ -7,6 +7,4 @@
 .App > .Footer {
   position: fixed;
   bottom: 25px;
-  margin-right: 48%;
-  margin-left: 48%;
 }
