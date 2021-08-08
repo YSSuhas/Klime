@@ -1,4 +1,8 @@
 .footer {
+    margin-left: 47%;
+    
     display: flex;
     justify-content: space-evenly;
+    position: fixed;
+    bottom: 0px;
 }

@@ -9,7 +9,7 @@ function Footer() {
             <a href="https://www.linkedin.com/in/yssuhas/">
                 <LinkedInIcon fontSize="small" />
             </a>
-            <p>By YSS</p>
+            <a><p>By YSS</p></a>
             <a href="https://github.com/YSSuhas">
                 <GitHubIcon fontSize="small" />
             </a>
